@@ -67,7 +67,19 @@ h1 { font-family: 'Libre Baskerville', serif; font-size: 4rem; margin: 0; }
 .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .view-btn { background: var(--navy); color: white; border: none; padding: 10px 25px; cursor: pointer; font-family: 'Montserrat'; font-weight: 600; margin-top: 15px; }
 .hidden-detail { display: none; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
+/* This makes the 4 education cards stay side-by-side on desktop */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
 
+/* Mobile fix for education grid */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr !important;
+    }
+}
 /* Footer - Centered */
 footer {
     text-align: center; /* Centers the text */
