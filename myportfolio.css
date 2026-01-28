@@ -80,3 +80,67 @@ footer {
 /* Buttons */
 .btn-primary { background: var(--harvard-crimson); color: white; padding: 15px 35px; text-decoration: none; display: inline-block; margin: 10px; font-weight: 700; }
 .btn-secondary { border: 2px solid white; color: white; padding: 13px 33px; text-decoration: none; display: inline-block; margin: 10px; font-weight: 700; }
+/* --- MOBILE RESPONSIVE FIXES --- */
+
+@media (max-width: 768px) {
+    /* 1. Reduce padding so text doesn't look squashed */
+    .section {
+        padding: 50px 5% !important;
+    }
+
+    /* 2. Make the Hero text smaller so it fits on one line */
+    h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .steady-subtitle {
+        font-size: 1.2rem !important;
+    }
+
+    /* 3. Adjust Navigation for mobile */
+    nav {
+        flex-direction: column; /* Stack logo and menu */
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        font-size: 0.8rem;
+    }
+
+    /* 4. Make Project Cards stack 1 by 1 */
+    .project-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    /* 5. Fix Hero Section Height */
+    header {
+        height: auto;
+        padding: 80px 5%;
+    }
+
+    /* 6. Adjust Skills Grid */
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
+
+    /* 7. Adjust Buttons */
+    .btn-primary, .btn-secondary {
+        width: 80%; /* Make buttons wider for easier tapping */
+        margin: 5px auto;
+        display: block;
+    }
+}
