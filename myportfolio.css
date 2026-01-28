@@ -1,0 +1,82 @@
+:root {
+    --harvard-crimson: #A51C30;
+    --navy: #002147;
+    --off-white: #fdfdfd;
+    --text-color: #1a1a1a;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px; /* Bigger base font for readability */
+    line-height: 1.8;
+    color: var(--text-color);
+    margin: 0;
+    background-color: var(--off-white);
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+    background: white;
+    border-bottom: 2px solid #eee;
+    position: sticky; top: 0; z-index: 1000;
+}
+nav .logo { font-weight: 700; font-size: 1.5rem; color: var(--harvard-crimson); }
+nav ul { display: flex; list-style: none; margin: 0; }
+nav ul li { margin-left: 30px; }
+nav ul li a { text-decoration: none; color: var(--navy); font-weight: 600; }
+
+/* Hero Section */
+header {
+    height: 70vh;
+    background: linear-gradient(rgba(0,33,71,0.92), rgba(0,33,71,0.92));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+h1 { font-family: 'Libre Baskerville', serif; font-size: 4rem; margin: 0; }
+.steady-subtitle { font-size: 1.8rem; color: #ccc; margin-top: 10px; font-weight: 300; }
+
+/* Sections */
+.section { padding: 100px 15%; }
+.section-title { 
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 2.5rem; 
+    border-bottom: 4px solid var(--harvard-crimson);
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.gray-bg { background-color: #f4f4f4; }
+
+/* Cards & Content */
+.edu-card, .exp-box, .project-card {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+.date-label { color: var(--harvard-crimson); font-weight: 700; font-size: 1.1rem; }
+.honor-badge { background: var(--harvard-crimson); color: white; padding: 5px 15px; border-radius: 50px; font-size: 0.9rem; }
+
+/* Projects Grid */
+.project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.view-btn { background: var(--navy); color: white; border: none; padding: 10px 25px; cursor: pointer; font-family: 'Montserrat'; font-weight: 600; margin-top: 15px; }
+.hidden-detail { display: none; margin-top: 20px; font-style: italic; border-top: 1px solid #eee; padding-top: 10px; }
+
+/* Footer - Centered */
+footer {
+    text-align: center; /* Centers the text */
+    padding: 50px;
+    background: var(--navy);
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn-primary { background: var(--harvard-crimson); color: white; padding: 15px 35px; text-decoration: none; display: inline-block; margin: 10px; font-weight: 700; }
+.btn-secondary { border: 2px solid white; color: white; padding: 13px 33px; text-decoration: none; display: inline-block; margin: 10px; font-weight: 700; }

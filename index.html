@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Loyd F. Fabul | Professional Portfolio</title>
+    <link rel="stylesheet" href="myportfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">JLFF</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <header id="about">
+        <div class="hero-content">
+            <h1>JOHN LOYD F. FABUL</h1>
+            <!-- Text is now steady and larger -->
+            <p class="steady-subtitle">Computer Engineering Technology Student & Software Quality Assurance </p>
+            <p class="location">Rosario, Batangas, Philippines | 09197626160</p>
+            <div class="cta-buttons">
+                <a href="mailto:fabuljohn03@gmail.com" class="btn-primary">Contact Me</a>
+                <a href="https://www.linkedin.com/in/john-loyd-fabul-016160326" target="_blank" class="btn-secondary">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="card-container">
+            <div class="edu-card">
+                <span class="date-label">2022 - 2026</span>
+                <h3>Batangas State University</h3>
+                <p class="major-text">BIT – Major in Computer Technology</p>
+                <span class="honor-badge">Deans Lister (2023-2024)</span>
+            </div>
+            <div class="edu-card">
+                <span class="date-label">2019 - 2021</span>
+                <h3>Mabini National High School</h3>
+                <p class="major-text">Electrical Installation and Maintenance</p>
+                <span class="honor-badge">With Honor (2021)</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section gray-bg">
+        <h2 class="section-title">Leadership Experience</h2>
+        <div class="exp-box">
+            <div class="exp-header">
+                <h3>Class President</h3>
+                <span class="date-label">2022 - Present</span>
+            </div>
+            <ul>
+                <li>Organize class meetings and communicate school-wide information.</li>
+                <li>Promote class unity and set a leadership example for classmates.</li>
+            </ul>
+        </div>
+        <div class="exp-box">
+            <div class="exp-header">
+                <h3>CPET Director & Representative</h3>
+                <span class="date-label">2024 - Present</span>
+            </div>
+            <ul>
+                <li>Support organization goals and promote active member involvement.</li>
+                <li>Assist in planning and executing large-scale technical activities.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Technical Projects</h2>
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Smartbin Automated System</h3>
+                <p class="project-desc">An Arduino-based system using sensors for contactless waste management.</p>
+                <button class="view-btn" onclick="toggleDetail('p1')">View Details</button>
+                <div id="p1" class="hidden-detail">Monitors garbage levels and opens lids automatically to maintain hygiene. Developed 2023-2024.</div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Rice Vending Machine</h3>
+                <p class="project-desc">A coin-operated dispenser controlled via Arduino for precise rice measurement.</p>
+                <button class="view-btn" onclick="toggleDetail('p2')">View Details</button>
+                <div id="p2" class="hidden-detail">Automates the retail sale of rice using embedded sensors and coin slots. Developed 2023-2024.</div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3>Smoke Alarm & CCTV System</h3>
+                <p class="project-desc">A safety system that detects smoke and triggers alarms with real-time surveillance.</p>
+                <button class="view-btn" onclick="toggleDetail('p3')">View Details</button>
+                <div id="p3" class="hidden-detail">Provides real-time video surveillance for quick emergency response using sensors and camera integration. Developed 2024-2025.</div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section gray-bg">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h4>Technical</h4>
+                <p>Arduino Prototyping, MS Office, Canva, Computer Literature</p>
+            </div>
+            <div class="skill-group">
+                <h4>Communication</h4>
+                <p>English, Filipino, Native Language</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Loyd F. Fabul | Batangas State University</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
