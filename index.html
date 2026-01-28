@@ -27,8 +27,12 @@
             <p class="steady-subtitle">Computer Engineering Technology Student & Software Quality Assurance </p>
             <p class="location">Rosario, Batangas, Philippines | 09197626160</p>
             <div class="cta-buttons">
-                <a href="mailto:fabuljohn03@gmail.com" class="btn-primary">Contact Me</a>
-                <a href="https://www.linkedin.com/in/john-loyd-fabul-016160326" target="_blank" class="btn-secondary">LinkedIn</a>
+    <!-- Keep the mailto for those who have apps, but add an ID for JS -->
+    <a href="mailto:fabuljohn03@gmail.com" class="btn-primary" id="contactBtn">Contact Me</a>
+    <a href="https://www.linkedin.com/in/john-loyd-fabul-016160326" target="_blank" class="btn-secondary">LinkedIn</a>
+</div>
+<!-- This small hidden text will appear when they click -->
+<p id="copyMessage" style="display:none; color: #A51C30; font-weight: bold; margin-top: 10px;">Email address copied to clipboard!</p>
             </div>
         </div>
     </header>
@@ -118,7 +122,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 John Loyd F. Fabul | Batangas State University - The National Engineering University </p>
+        <p>&copy; 2026 John Loyd F. Fabul | Batangas State University - The National Engineering University <
     </footer>
 
     <script src="script.js"></script>
